@@ -21,7 +21,7 @@ pipeline {
               steps {
                 echo "Deploying ..."
                 sh '''
-                echo " deliver tasks "
+                echo " deploy tasks "
                 '''
             }
         } 
