@@ -17,9 +17,9 @@ pipeline {
                 '''
             }
         } 
-        stage ('Deliver') {
+        stage ('Deploy') {
               steps {
-                echo "Delivering ..."
+                echo "Deploying ..."
                 sh '''
                 echo " deliver tasks "
                 '''
