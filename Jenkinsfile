@@ -10,16 +10,16 @@ pipeline {
         
         stage('Checkout from SCM'){ 
             steps {
-                git branch: 'dev', url: 'https://github.com/ksks0000/Jenkins-learning.git'
-                /*
+                // u slucaju  da je public repo moze bez credentialsId
+                // git branch: 'dev', url: 'https://github.com/ksks0000/Jenkins-learning.git'
+                // za private repo:
                 git(
-                    url: "${GIT_REPO_URL}",
-                    branch: "${GIT_BRANCH}",
-                    // credentialsId: "git", 
+                    url: "https://github.com/ksks0000/Jenkins-learning.git",
+                    branch: "dev",
+                    credentialsId: "git ssh key credential", 
                     changelog: true,
                     poll: true
                 )
-                */
             }      
         }
         
