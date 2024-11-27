@@ -12,7 +12,7 @@ pipeline {
             steps {
                 // u slucaju  da je public repo moze bez credentialsId
                 // git branch: 'dev', url: 'https://github.com/ksks0000/Jenkins-learning.git'
-                // za private repo:
+                // za private repo:  //da vidimo dal ce ovako da radi
                 git(
                     url: "https://github.com/ksks0000/Jenkins-learning.git",
                     branch: "dev",
