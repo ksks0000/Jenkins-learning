@@ -25,8 +25,6 @@ pipeline {
                 echo "Building ..."
                 sh '''
                 echo " build tasks "
-                composer --version
-                composer install
                 '''
             }
         } 
