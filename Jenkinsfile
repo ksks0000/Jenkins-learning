@@ -7,9 +7,11 @@ pipeline {
     }
     
     stages {
-        /*
+        
         stage("Checkout from SCM"){//check out the code from git repo into the jenkins workspace 
             steps {
+                git branch: 'dev', url: 'https://github.com/ksks0000/Jenkins-learning.git'
+                /*
                 git(
                     url: "${GIT_REPO_URL}",
                     branch: "${GIT_BRANCH}",
@@ -17,9 +19,10 @@ pipeline {
                     changelog: true,
                     poll: true
                 )
+                */
             }      
         }
-        */
+        
         stage ('Build') {
             steps {
                 echo "Building ..."
