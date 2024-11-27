@@ -4,7 +4,7 @@ pipeline {
     environment {
         GIT_REPO_URL = 'https://github.com/ksks0000/Jenkins-learning.git'
         GIT_BRANCH = 'dev'
-        SSH_KEY = credentials('git-ssh-key') // Jenkins SSH credentials (use your configured SSH key) //2100fc81-e2fe-426d-a0b8-ff04b37c45b7
+        SSH_KEY = '2100fc81-e2fe-426d-a0b8-ff04b37c45b7' //credentials('git-ssh-key') // Jenkins SSH credentials (use your configured SSH key) 
     }
     
     stages {
