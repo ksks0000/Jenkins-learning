@@ -10,9 +10,9 @@ pipeline {
         stage("Checkout from SCM"){//check out the code from git repo into the jenkins workspace 
             steps {
                 git(
-                    url: '${GIT_REPO_URL}',
-                    branch: '${GIT_BRANCH}',
-                    // credentialsId: 'git', 
+                    url: "${GIT_REPO_URL}",
+                    branch: "${GIT_BRANCH}",
+                    // credentialsId: "git", 
                     changelog: true,
                     poll: true
                 )
