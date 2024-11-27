@@ -12,7 +12,7 @@ pipeline {
                 git(
                     url: '${GIT_REPO_URL}',
                     branch: '${GIT_BRANCH}',
-                    credentialsId: 'git', 
+                    # credentialsId: 'git', 
                     changelog: true,
                     poll: true
                 )
