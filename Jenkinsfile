@@ -16,7 +16,7 @@ pipeline {
                 git(
                     url: "https://github.com/ksks0000/Jenkins-learning.git",
                     branch: "dev",
-                    credentialsId: "git ssh key credential", 
+                    credentialsId: "2100fc81-e2fe-426d-a0b8-ff04b37c45b7", 
                     changelog: true,
                     poll: true
                 )
