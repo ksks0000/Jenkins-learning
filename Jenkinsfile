@@ -7,6 +7,7 @@ pipeline {
     }
     
     stages {
+        /*
         stage("Checkout from SCM"){//check out the code from git repo into the jenkins workspace 
             steps {
                 git(
@@ -18,6 +19,7 @@ pipeline {
                 )
             }      
         }
+        */
         stage ('Build') {
             steps {
                 echo "Building ..."
